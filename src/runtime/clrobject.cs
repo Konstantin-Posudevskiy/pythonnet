@@ -7,7 +7,7 @@ namespace Python.Runtime
     {
         internal object inst;
 
-        internal CLRObject(object ob, IntPtr tp)
+        protected CLRObject(object ob, IntPtr tp)
         {
             IntPtr py = Runtime.PyType_GenericAlloc(tp, 0);
 
